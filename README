@@ -1,0 +1,5 @@
+This will eventually become a set of PSGI[1] applications that replicate all of the scripts found in Matt's Script Archive[2] and the nms[3] project.
+
+[1] http://plackperl.org/
+[2] http://www.scriptarchive.com/
+[3] http://nms-cgi.sourceforge.net/
