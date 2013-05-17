@@ -23,14 +23,6 @@ get '/' => sub {
     return $phrase;
 };
 
-get '/img/:img' => sub {
-    return send_file 'img/' . params->{img};
-};
-
-get '/test' => sub {
-    return '<img src="/" />';
-};
-
 dance;
 
 sub get_file {
