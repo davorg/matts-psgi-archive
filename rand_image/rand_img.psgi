@@ -11,7 +11,7 @@ my $img_dir = 'public/img';
 get '/' => sub {
     opendir my $dir, $img_dir or die $!;
     my @imgs = grep { -f "$img_dir/$_" } readdir $dir;
-    my $img = @imgs[rand @imgs];
+    my $img = $imgs[rand @imgs];
     
     warn $img;
     
