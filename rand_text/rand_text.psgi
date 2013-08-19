@@ -18,7 +18,7 @@ get '/' => sub {
         local $/ = $delimiter;
         chomp(@phrases = <$file>);
     }
-    my $phrase = @phrases[rand @phrases];
+    my $phrase = $phrases[rand @phrases];
     
     return $phrase;
 };
